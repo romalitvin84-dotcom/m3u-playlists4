@@ -1,0 +1,29 @@
+name: Автоматическое обновление плейлиста
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # каждый день в 00:00 (можно изменить на другое время)
+  workflow_dispatch:   # ручной запуск workflow
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Забрать файлы
+        uses: actions/checkout@v4
+
+      - name: Подготовить Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Запустить программу
+        run: python scripts/merge.py
+
+      - name: Сохранить результат
+        run: |
+          git config user.name "github"
+          git config user.email "github@github.com"
+          git add output/final.m3u
+          git commit -m "Автоматическое обновление плейлиста" || true
+          git push
