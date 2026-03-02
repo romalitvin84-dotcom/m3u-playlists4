@@ -1,7 +1,8 @@
-
-name: Тест обновления плейлиста
+name: Автоматическое обновление плейлиста
 
 on:
+  schedule:
+    - cron: '0 0 * * *'  # каждый день в 00:00 по UTC
   workflow_dispatch:  # запуск вручную
 
 jobs:
@@ -18,5 +19,12 @@ jobs:
           python-version: "3.11"
 
       - name: Запустить программу
+        run: python scripts/merge.py
+
+      - name: Сохранить результат
         run: |
-          echo "Проверка: скрипт работает"  # Тестовый вывод, чтобы убедиться, что процесс запускается
+          git config user.name "github"
+          git config user.email "github@github.com"
+          git add output/final.m3u
+          git commit -m "Автоматическое обновление плейлиста" || true
+          git push
