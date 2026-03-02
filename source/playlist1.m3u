@@ -1,0 +1,25 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="ntv.ru" tvg-name="НТВ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0e/NTV_logo_2016.svg" group-title="Россия HD",НТВ HD
+https://cdn-dvr.ntv.ru/sledstvie/tracks-v1a1/mono.ts.m3u8
+#EXTINF:0,Galaxy
+http://176.118.197.125/Galaxy/index.m3u8
+#EXTINF:-1 tvg-id="viju-history.ru" tvg-name="viju History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5a/Viju_logo.svg" group-title="Документальные HD",viju History HD
+http://176.118.197.125/viju-History/index.m3u8
+#EXTINF:-1 tvg-id="discoverychannel.com" tvg-name="Discovery Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/Discovery_Channel_logo.svg" group-title="Документальные HD",Discovery Channel HD
+http://5.188.159.128:8070/DiscoveryChannel/index.m3u8
+#EXTINF:-1 tvg-id="russia1.ru" tvg-name="Россия 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3f/Russia-1_logo.svg" group-title="Россия HD",Россия 1 HD
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/9/russia1-hd/index.m3u8
+#EXTINF:-1 tvg-id="okko.ru" tvg-name="Okko" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2b/Okko_logo.svg" group-title="Онлайн кинотеатры",Okko
+http://185.221.213.254:8080/Okko/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-id="natgeo.com" tvg-name="National Geographic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/National_Geographic_Logo.svg" group-title="Документальные HD",National Geographic HD
+http://185.164.82.18:9010/ykMHqK_NatGeo
+#EXTINF:-1 tvg-id="ren-tv.ru" tvg-name="РЕН ТВ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5f/REN_TV_logo.svg" group-title="Россия HD",РЕН ТВ HD
+http://185.46.16.239:8000/REN_TV
+#EXTINF:-1 tvg-id="terra.ru" tvg-name="Terra" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/Terra_logo.svg" group-title="Документальные HD",Terra HD
+http://31.148.48.15/Terra/index.m3u8
+#EXTINF:-1 tvg-id="ctc.ru" tvg-name="СТС" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/66/STS group-title="Россия HD",СТС HD
+http://a0925677.xsph.ru/hls/CH_KRONEHIT.m3u8
+#EXTINF:-1,tvg-id="ctc.ru" tvg-name="History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/66/ group-title="History HD"
+http://ip1.orgip.net/414/video.m3u8
+#EXTINF:-1, tvg-id="History2" tvg-name="History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/History2_logo.svg" group-title="History"
+http://ip1.orgip.net/415/video.m3u8
